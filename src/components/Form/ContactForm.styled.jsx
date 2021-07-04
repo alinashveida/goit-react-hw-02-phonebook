@@ -48,5 +48,3 @@ export const ButtomSubmit = styled.button`
     background: #a4dada;
   }
 `
-
-// export const ButtomInput = styled.input``

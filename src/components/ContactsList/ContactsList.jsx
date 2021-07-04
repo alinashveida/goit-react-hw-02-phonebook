@@ -4,7 +4,9 @@ export default function ContactsListSection({ contacts }) {
   return (
     <ContactsList>
       {contacts.map((contact) => (
-        <ContactItem key={contact}>{contact}</ContactItem>
+        <ContactItem key={contact.id}>
+          {contact.name}: {contact.number}
+        </ContactItem>
       ))}
     </ContactsList>
   )
