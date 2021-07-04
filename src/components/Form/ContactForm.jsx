@@ -1,4 +1,6 @@
 import { Form, Label, Input, ButtomSubmit } from './ContactForm.styled'
+import { BsFillPersonFill } from 'react-icons/bs'
+import { AiFillPhone } from 'react-icons/ai'
 
 import React, { Component } from 'react'
 
@@ -35,6 +37,7 @@ export default class ContactForm extends Component {
     return (
       <Form onSubmit={this.onSubmitButton}>
         <Label>
+          <BsFillPersonFill /> Name
           <Input
             type="text"
             name="name"
@@ -44,6 +47,9 @@ export default class ContactForm extends Component {
             onChange={this.onChangeInput}
             value={this.state.name}
           />
+        </Label>
+        <Label>
+          <AiFillPhone /> Number
           <Input
             type="tel"
             name="number"

@@ -1,15 +1,23 @@
 import styled from '@emotion/styled'
 
 export const Form = styled.form`
-  padding: 24px;
-
   & input {
     display: block;
     margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 
-export const Label = styled.label``
+export const Label = styled.label`
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+  // color: #fff;
+  // color: #524f4e;
+  color: #f137a6;
+  margin-right: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+`
 
 export const Input = styled.input`
   width: 400px;
@@ -19,10 +27,11 @@ export const Input = styled.input`
   border-bottom: 1px solid #eee;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
+  margin-top: 10px;
 
   &:focus {
-    border: 4px solid #eee;
-    box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f137a6;
+    box-shadow: 0 0 20px 4px #f137a6;
     outline: none;
   }
 `

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Title, SubTitle } from './App.styled'
+import { Title, SubTitle, Container } from './App.styled'
 import ContactForm from '../Form/ContactForm'
 import ContactsListSection from '../ContactsList/ContactsList'
 import Filter from '../Filter/Filter'
@@ -24,6 +24,15 @@ export default class App extends Component {
       name: data.name,
       number: data.number,
     }
+
+    // this.state.contacts.filter((contact) => (if(contact.name === data.name){
+    //   console.log('gh')
+
+    // }))
+
+    // const normalizedContacts = data.name.toLowerCase()
+    // console.log(normalizedContacts)
+
     this.setState((prevState) => ({
       contacts: [newContact, ...prevState.contacts],
     }))
@@ -50,7 +59,7 @@ export default class App extends Component {
     const filterContacts = this.getFilterContacts()
 
     return (
-      <div>
+      <Container>
         <Title>Phonebook</Title>
 
         <ContactForm onSubmit={this.forSubmitHendler}></ContactForm>
@@ -60,7 +69,7 @@ export default class App extends Component {
         <Filter value={this.state.filter} onChange={this.onChangeFilter} />
 
         <ContactsListSection contacts={filterContacts} />
-      </div>
+      </Container>
     )
   }
 }
