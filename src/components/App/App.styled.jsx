@@ -23,5 +23,8 @@ export const SubTitle = styled.h2`
   color: #f137a6;
 `
 export const Container = styled.div`
-  text-align: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 `

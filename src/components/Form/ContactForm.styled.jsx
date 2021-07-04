@@ -40,7 +40,7 @@ export const ButtomSubmit = styled.button`
   text-decoration: none;
   display: inline-block;
   padding: 15px 30px;
-  margin: 10px 20px;
+  margin: 10px 50px;
   border-radius: 10px;
   box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
   font-family: 'Montserrat', sans-serif;
@@ -50,6 +50,9 @@ export const ButtomSubmit = styled.button`
   transition: 0.15s ease-in-out;
 
   border: none;
+
+  margin-left: 32%;
+  // margin-right: auto;
 
   &:hover {
     box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
